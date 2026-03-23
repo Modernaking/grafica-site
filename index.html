@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moderna Coworking | Impressões Profissionais</title>
+
+  <!-- SEO BÁSICO -->
+  <meta name="description" content="Cartões, banners, fachadas, placas e impressões em adesivo. Monte sua empresa com a gente!">
+
+  <style>
+    :root {
+      --azul-escuro:#0f172a;
+      --azul-grad:#1e293b;
+      --verde:#22c55e;
+      --amarelo:#eab308;
+      --ciano:#22d3ee;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:#0b1020;
+      color:#fff;
+      scroll-behavior:smooth;
+    }
+
+    /* ===== ANIMAÇÕES SUAVES ===== */
+    .fade-up{
+      opacity:0;
+      transform:translateY(40px);
+      transition:all .8s ease;
+    }
+
+    .fade-up.show{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    header{
+      background:linear-gradient(135deg,var(--azul-escuro),var(--azul-grad));
+      padding:90px 20px;
+      text-align:center;
+      animation:fadeHero 1.2s ease forwards;
+    }
+
+    @keyframes fadeHero{
+      from{opacity:0;transform:translateY(-20px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    header h1{
+      font-size:clamp(28px,5vw,46px);
+      margin:0 0 10px;
+    }
+
+    header p{
+      font-size:clamp(16px,3vw,20px);
+      color:var(--ciano);
+    }
+
+    .cta a{
+      display:inline-block;
+      margin-top:25px;
+      background:linear-gradient(90deg,var(--verde),var(--amarelo));
+      color:#000;
+      padding:16px 32px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:.3s;
+      box-shadow:0 12px 25px rgba(0,0,0,.4);
+    }
+
+    .cta a:hover{transform:translateY(-3px)}
+
+    section{
+      padding:70px 18px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:45px;
+      font-size:clamp(24px,4vw,34px);
+    }
+
+    /* ===== BANNERS ===== */
+    .banner{
+      border-radius:14px;
+      overflow:hidden;
+      margin-bottom:30px;
+      box-shadow:0 15px 35px rgba(0,0,0,.45);
+    }
+
+    .banner img{width:100%;display:block}
+
+    /* ===== SERVIÇOS ===== */
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:linear-gradient(180deg,#111827,#020617);
+      padding:26px;
+      border-radius:14px;
+      text-align:center;
+      transition:.35s;
+      border:1px solid rgba(255,255,255,.05);
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 18px 35px rgba(0,0,0,.6);
+    }
+
+    .card h3{color:var(--ciano)}
+
+    /* ===== CONTATO ===== */
+    .contact{
+      background:#020617;
+      text-align:center;
+      border-top:4px solid var(--verde);
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      background:#020617;
+      color:#94a3b8;
+      font-size:14px;
+    }
+
+    /* ===== BOTÃO WHATSAPP FLUTUANTE ===== */
+    .whatsapp{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      width:65px;
+      height:65px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 10px 25px rgba(0,0,0,.4);
+      z-index:999;
+      animation:pulse 2s infinite;
+    }
+
+    .whatsapp img{width:34px}
+
+    @keyframes pulse{
+      0%{transform:scale(1)}
+      50%{transform:scale(1.08)}
+      100%{transform:scale(1)}
+    }
+
+    /* ===== MOBILE OTIMIZADO ===== */
+    @media(max-width:600px){
+      header{padding:70px 15px}
+      section{padding:50px 15px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Monte sua empresa com a gente!</h1>
+  <p>Cartões • Banners • Fachadas • Placas • Impressões em Adesivo</p>
+  <div class="cta">
+    <a href="https://wa.me/5518996627733" target="_blank">Falar no WhatsApp</a>
+  </div>
+</header>
+
+<section class="fade-up">
+  <h2>Conheça Nosso Trabalho</h2>
+
+  <div class="banner">
+    <img src="banner1.jpg" alt="Trabalhos Moderna">
+  </div>
+
+  <div class="banner">
+    <img src="banner2.jpg" alt="Materiais gráficos">
+  </div>
+</section>
+
+<section class="fade-up">
+  <h2>Nossos Serviços</h2>
+  <div class="services">
+    <div class="card"><h3>Cartões</h3><p>Impressão profissional para destacar sua marca.</p></div>
+    <div class="card"><h3>Banners</h3><p>Alta qualidade para divulgação interna e externa.</p></div>
+    <div class="card"><h3>Fachadas</h3><p>Comunicação visual moderna e impactante.</p></div>
+    <div class="card"><h3>Placas</h3><p>Soluções resistentes e personalizadas.</p></div>
+    <div class="card"><h3>Adesivos</h3><p>Ideal para vitrines, veículos e decoração.</p></div>
+  </div>
+</section>
+
+<section class="contact fade-up">
+  <h2>Contato</h2>
+  <p><strong>WhatsApp:</strong> (18) 99662‑7733</p>
+  <p><strong>Endereço:</strong> Rua Rio Branco, 02-45</p>
+</section>
+
+<footer>
+  © 2026 Moderna Coworking — Comunicação Visual Profissional.
+</footer>
+
+<!-- BOTÃO WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/5518996627733" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+<!-- SCRIPT ANIMAÇÃO SCROLL -->
+<script>
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
